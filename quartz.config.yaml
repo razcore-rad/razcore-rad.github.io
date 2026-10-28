@@ -181,13 +181,6 @@ plugins:
       enableCheckbox: false
       enableObsidianUri: true
     order: 30
-  - source: github:quartz-themes/core
-    enabled: true
-    options:
-      theme: tokyo-night-storm
-      mode: dark
-      themeFonts: true
-    order: 10
   - source: github:quartz-community/content-index
     enabled: true
     options:
@@ -427,18 +420,17 @@ plugins:
       position: beforeBody
       priority: 15
   - source: github:quartz-community/spacer
-    enabled: true
+    enabled: false
     options: {}
     order: 15
     layout:
       position: left
       priority: 15
-  - source: github:quartz-community/fonts
+  - source: "@quartz-themes/core"
     enabled: true
     options:
-      useThemeFonts: true
-      fontOrigin: googleFonts
-    order: 60
+      theme: tokyo-night-simple
+      mode: dark
 layout:
   groups:
     toolbar:
